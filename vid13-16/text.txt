@@ -1,0 +1,7 @@
+ Vid 13 -- Enteties,code tag and more
+ 
+ Vid 14 -- intro to css
+
+ vid 15 -- inline internal and external css
+
+ vid 16 -- Solution of excercise1 (embed audio and video)

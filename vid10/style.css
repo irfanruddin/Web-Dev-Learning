@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("Bground.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #222;
+}
+
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 8px 0 24px;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+.lessons {
+  display: grid;
+  gap: 24px;
+}
+
+.lesson {
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.lesson h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.lesson video {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-top: 14px;
+}
+
+.audio {
+  margin-top: 32px;
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.audio h2 {
+  margin-top: 0;
+}
+
+.audio audio {
+  width: 100%;
+  margin-top: 14px;
+}
+
+@media (min-width: 760px) {
+  .lessons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .lessons {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
