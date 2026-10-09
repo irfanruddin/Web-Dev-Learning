@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      :root {
+        --defpad: 20px;
+        --color: rgb(116, 116, 227);
+        --seccolor: rgb(193, 193, 234);
+        --defopa: 0.8;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: var(--seccolor);
+      }
+      nav {
+        display: flex;
+        list-style: none;
+        background-color: var(--color);
+        padding: var(--defpad);
+        gap: 30px;
+        opacity: var(--defopa);
+        font-weight: bold;
+        align-items: center;
+      }
+
+      .i0 {
+        font-size: 20px;
+      }
+      .nav2 {
+        display: flex;
+        display: none;
+        justify-content: space-between;
+      }
+      p {
+        padding: var(--defpad);
+        background-color: var(--seccolor);
+        margin-top: 0%;
+        opacity: var(--defopa);
+        text-align: justify;
+      }
+      @media (max-width: 600px) {
+        .nav {
+          display: none;
+        }
+        .nav2 {
+          display: flex;
+        }
+      }
+      .space {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="i0">Northstar</div>
+        <div class="space"></div>
+        <div class="i1">
+          <i class="fa-solid fa-user"></i>
+          <span>About</span>
+        </div>
+        
+          <div class="i2">
+            <i class="fa-solid fa-home"></i>
+            <span>Home</span>
+          </div>
+          <div class="i3">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </div>
+          <div class="i4">
+            <i class="fa-solid fa-gear"></i>
+            <span>Settings</span>
+          </div>
+          <div class="i5">
+            <i class="fa-solid fa-search"></i>
+            <span>Search</span>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="nav2">
+        <div class="i0">Northstar</div>
+
+        <div class="i1">
+          <i class="fa-solid fa-bars"></i>
+          <span>Menu</span>
+        </div>
+      </nav>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+        ut laudantium fugit quis accusamus impedit, non ipsum suscipit in
+        facilis molestiae esse est amet laboriosam. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Facilis expedita eveniet eaque recusandae,
+        alias in tempore adipisci natus quo sit temporibus excepturi et
+        molestiae molestias?
+      </p>
+    </div>
+  </body>
+</html>

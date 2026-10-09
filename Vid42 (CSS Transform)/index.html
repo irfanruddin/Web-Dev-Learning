@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        padding: 50px;
+        border: 2px solid black;
+        display: flex;
+        perspective: 500px;
+        flex-direction: row;
+        gap: 100px;
+        flex-wrap: wrap;
+      }
+      .box {
+        border: 2px solid maroon;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box1 {
+        transform: rotate(45deg);
+      }
+      .box2 {
+        transform: rotateX(15deg);
+      }
+      .box3 {
+        transform: rotateY(25deg);
+      }
+      .box4 {
+        transform: rotateZ(45deg);
+      }
+      .box5 {
+        transform: skew(30deg);
+      }
+      .box6 {
+        transform: skewX(30deg);
+      }
+      .box7 {
+        transform: skewY(30deg);
+      }
+      .box8 {
+        transform: translate(50px, 50px);
+      }
+      .box9 {
+        transform: translateX(50%);
+      }
+      .box10 {
+        transform: translateY(50%);
+      }
+      .box11 {
+        transform: translateZ(75px);
+      }
+      .box12 {
+        transform: translate3d(50px, 30px, 20px);
+      }
+      .box13 {
+        transform: scale(1.5);
+      }
+      .box14 {
+        transform: scaleX(1.5);
+      }
+      .box15 {
+        transform: scaleY(1.5);
+      }
+      .box16 {
+        transform: scaleZ(2) rotateY(15deg);
+      }
+      .box17 {
+        transform: scale3d(1.5, 1.5, 1);
+      }
+      .box18 {
+        transform: translate3d(50px, 30px, 20px);
+      }
+      .box19 {
+        transform: matrix(1, 0.5, -0.5, 1, 0, 0);
+      }
+      .box20 {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 50, 30, 20, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+      <div class="box box4">box4</div>
+      <div class="box box5">box5</div>
+      <div class="box box6">box6</div>
+      <div class="box box7">box7</div>
+      <div class="box box8">box8</div>
+      <div class="box box9">box9</div>
+      <div class="box box10">box10</div>
+      <div class="box box11">box11</div>
+      <div class="box box12">box12</div>
+      <div class="box box13">box13</div>
+      <div class="box box14">box14</div>
+      <div class="box box15">box15</div>
+      <div class="box box16">box16</div>
+      <div class="box box17">box17</div>
+      <div class="box box18">box18</div>
+      <div class="box box19">box19</div>
+      <div class="box box20">box20</div>
+    </div>
+  </body>
+</html>

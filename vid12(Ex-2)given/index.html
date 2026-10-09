@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-Dev Course</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      .lessons {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 24px;
+      }
+
+      .lesson {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .lesson video {
+        width: 200px;
+        height: 300px;
+        object-fit: fill;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page-container">
+      <header>
+        <h1>Web Development Course</h1>
+        <p>Learn HTML and CSS with video lessons and a final audio track.</p>
+      </header>
+
+      <section class="lessons">
+        <article class="lesson">
+          <h2 style="background-color: aqua;">Day 1: Lorem ipsum dolor sit.</h2>
+          <video src="video1.mp4" controls poster="meeem.jpg" preload="metadata" height="300" width="200" style="background-color: aqua;"></video>
+        </article>
+
+        <article class="lesson">
+          <h2>Day 2: Lorem ipsum dolor sit.</h2>
+          <video src="video2.mp4" controls poster="meeem.jpg" preload="metadata" height="300" width="200"></video>
+        </article>
+
+        <article class="lesson">
+          <h2>Day 3: Lorem ipsum dolor sit.</h2>
+          <video src="video3.mp4" controls poster="meeem.jpg" preload="metadata" height="300" width="200"></video>
+        </article>
+
+        <article class="lesson">
+          <h2>Day 4: Lorem ipsum dolor sit.</h2>
+          <video src="video4.mp4" controls poster="meeem.jpg" preload="metadata" height="300" width="200"></video>
+        </article>
+
+        <article class="lesson">
+          <h2>Day 5: Lorem ipsum dolor sit.</h2>
+          <video src="video5  .mp4" controls poster="meeem.jpg" preload="metadata" height="300" width="200"></video>
+        </article>
+
+        <article class="lesson">
+          <h2>Day 6: Lorem ipsum dolor sit.</h2>
+          <video src="video6.mp4" controls poster="meeem.jpg" preload="metadata" height="300" width="200"></video>
+        </article>
+
+        <!-- <article class="lesson">
+          <h2>Day 7: Lorem ipsum dolor sit.</h2>
+          <video src="video7.mp4" controls poster="pic.jpg" preload="metadata"></video>
+        </article>
+      </section> -->
+
+      <section class="audio">
+        <h2>Final Lesson: Beautiful song</h2>
+        <audio src="song1.mp3" controls>
+          Your browser does not support audio playback.
+        </audio>
+      </section>
+    </main>
+  </body>
+</html>

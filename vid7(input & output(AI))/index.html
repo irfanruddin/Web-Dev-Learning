@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northstar | Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar"><div class="brand">north<span>star</span> / careers</div><div class="user"><div class="avatar">JD</div><div><small>Signed in as</small><strong>Jordan Davis</strong></div><button class="logout" id="logout">Log out</button></div></header>
+    <main class="layout">
+        <aside class="side"><div class="kicker">Application / 01</div><h1>Make your mark.</h1><p>Tell us a little about yourself and the kind of work you want to do next. We read every application with care.</p><div class="progress"><span>30% complete</span><div class="progress-bar"><i></i></div></div></aside>
+        <section class="form-card"><h2>About you</h2><p>A few details to get your application started.</p><form id="applicationForm"><div class="grid"><div><label for="firstName">First name</label><input id="firstName" name="firstName" placeholder="Jordan" required></div><div><label for="lastName">Last name</label><input id="lastName" name="lastName" placeholder="Davis" required></div></div><label for="role">Role you are interested in</label><select id="role" required><option value="">Choose a role</option><option>Frontend Developer</option><option>Backend Developer</option><option>Product Designer</option><option>Product Manager</option></select><label>Your strongest areas</label><div class="choices"><label><input type="checkbox" name="area" value="build"> Building</label><label><input type="checkbox" name="area" value="design"> Design</label><label><input type="checkbox" name="area" value="lead"> Leadership</label><label><input type="checkbox" name="area" value="learn"> Learning</label></div><label for="story">What are you excited to work on?</label><textarea id="story" placeholder="A short note about your interests..."></textarea><div class="actions"><small>We will save your progress automatically.</small><button class="submit" type="submit">Save &amp; continue &rarr;</button></div><div class="success" id="success">Saved. Your application is off to a great start.</div></form></section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

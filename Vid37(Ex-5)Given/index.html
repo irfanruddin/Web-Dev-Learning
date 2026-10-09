@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        padding: 0 30px;
+        background-color: rgb(32, 2, 53);
+        height: 60px;
+        color: white;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+      }
+      .main {
+        background-color: aliceblue;
+      }
+      .cards {
+        padding: 50px;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .card {
+        /* flex: 1; */
+        padding: 20px;
+        padding-top: 30px;
+        min-height: 500px;
+        width: 500px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: justify;
+        box-shadow: -2px -2px 8px rgba(0, 0, 0, 0.15);
+      }
+      .footer {
+        background-color: white;
+        height: 60px;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+      }
+      .content {
+        background-color: rgb(32, 2, 53);
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .c1 {
+        background-color: rgb(245, 203, 232);
+      }
+      .c2 {
+        background-color: rgb(203, 232, 245);
+      }
+      .nav {
+        display: flex;
+        gap: 30px;
+        margin-left: auto;
+        /* justify-content: space-around; */
+        justify-content: flex-end;
+      }
+      .nest {
+        color: rgb(53, 53, 155);
+      }
+      header > span {
+        font-weight: bolder;
+        font-size: 2rem;
+      }
+      .right {
+        display: flex;
+        gap: 20px;
+        margin-left: auto;
+      }
+      .img1 {
+        width: 50%;
+        height: 40%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      .img2 {
+        width: 50%;
+        height: 40%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      h3 {
+        font-size: larger;
+        padding: 10px 10px 10px 0;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+      button {
+        margin-top: 30px;
+        padding: 10px;
+        color: white;
+        border-radius: 25px;
+        border: none;
+        display: block;
+        margin: 30px auto 0 auto;
+      }
+      .btn1 {
+        background-color: rgb(221, 82, 137);
+      }
+      .btn2 {
+        background-color: rgb(75, 170, 214);
+      }
+      .content {
+        color: white;
+      }
+      .head {
+        font-size: 50px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .s2 {
+        color: rgb(53, 53, 155);
+      }
+      .box {
+        width: 800px;
+        height: 300px;
+        text-align:center;
+      }
+      .bottom {
+        padding-inline: 10px;
+      }
+      .btn3{
+        margin-top: 50px;
+        padding: 10px 60px 10px 60px;
+        border: 2px solid white;
+        background-color:rgb(32, 2, 53) ;
+      }
+      .dn{
+        border: 2px solid rgb(216, 99, 16);
+        background-color: rgb(32, 2, 53);
+        color:  rgb(216, 99, 16);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn1:hover{
+        cursor: pointer;
+         background-color: rgb(186, 49, 92);
+      }
+      .btn2:hover{
+        cursor: pointer;
+         background-color: rgb(49, 130, 186);
+      }
+      .btn3:hover{
+        cursor: pointer;
+         background-color: rgb(20, 1, 33);
+         color: white;
+      }
+      .nav div:hover{
+        position: relative;
+        cursor: pointer;
+      }
+      .nav div:hover::after{
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color:  rgb(53, 53, 155);
+        border-radius: 4px;
+      }
+      .nav2{
+        display: none;
+      }
+      @media (max-width: 600px){
+        .nav{
+          display: none;
+        }
+        .nav2{
+          display: block;
+          margin-left: auto;
+        }
+        
+        
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <span>Dev</span>
+      <span class="nest">Nest</span>
+      <nav class="nav">
+        <div>
+          <i class="fa-solid fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-user"></i>
+          <span>About</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-search"></i>
+          <span>Search</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <span>ContactUs</span>
+        </div>
+      </nav>
+      <nav class="nav2">
+        <div>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="cards">
+        <div class="card c1">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJnNpAGnfqTT62ildfa1EyHcgHe7xfRAnBMpXiFhPHMg&s=10"
+            alt="coding image"
+            class="img1"
+          />
+          <h3>Learn To Code</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            quae accusantium aliquam quas, expedita quidem porro rem numquam
+            debitis, ullam facere tempore earum provident repellendus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+            voluptatem? Maiores exercitationem iusto minus aut quam. Magni
+            minima minus temporibus suscipit, dolores odio modi accusantium.
+          </p>
+          <button class="btn1">Get Started →</button>
+        </div>
+        <div class="card c2">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnoQwwelQXAEP5vqFsDDBAbs_UV_ZGUsKwfRYyDJY7_A&s=10"
+            alt=" project idea image"
+            class="img2"
+          />
+          <h3>Build Projects</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            quae accusantium aliquam quas, expedita quidem porro rem numquam
+            debitis, ullam facere tempore earum provident repellendus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+            voluptatem? Maiores exercitationem iusto minus aut quam. Magni
+            minima minus temporibus suscipit, dolores odio modi accusantium.
+          </p>
+          <button class="btn2">Explore Now →</button>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="box">
+          <div class="head">
+            <span class="s1">Build Something </span>
+            <span class="s2">Amazing</span>
+          </div class="bottom">
+          <p>
+            We are empowering the next generation of digital creators with
+            cutting-edge tools. Turn your next big idea into a beautiful,
+            lightning-fast, and fully responsive website that scales
+            effortlessly and captivates users across every screen.
+          
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit harum repellat quae iure debitis voluptatibus asperiores possimus aspernatur tempore mollitia sit, vel, excepturi commodi.
+          </p>
+          <button class="btn3">Join Now</button>
+        </div>
+
+      </section>
+      <div class="dn">
+        DN
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="left">&copy;2026 DevNest. All rights reserved.</div>
+      <div class="right">
+        <div>Privacy | Terms | Contact</div>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

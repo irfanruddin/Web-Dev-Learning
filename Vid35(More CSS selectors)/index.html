@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* class */
+      .header {
+        background: aqua;
+      }
+      /* id */
+      #first {
+        background: burlywood;
+        color: brown;
+      }
+      /* universal */
+      * {
+        margin: 10px;
+        padding: 10px;
+      }
+      .footer * {
+        color: blueviolet;
+      }
+      /* child */
+
+      div > p {
+        background-color: white;
+      }
+
+      /* decsendent */
+      div p {
+        text-decoration: underline;
+      }
+      /* pseudo */
+      a:link {
+        color: green;
+      }
+      a:visited {
+        color: black;
+      }
+      a:hover {
+        color: red;
+      }
+      /* a:active {
+            color: blue;
+       .header::first-letter {
+        font-size: 30px;
+      } */
+      .footer :first-child {
+        background-color: bisque;
+      }
+      /* .footer p:first-child{
+            background-color: rgb(123, 73, 12);
+        } */
+      .header :first-child {
+        color: black;
+      }
+
+      /* Pseudo elements */
+      .header::before {
+        content: " My Website";
+        font-size: larger;
+        font-weight: 800;
+      }
+      .footer::after {
+        content: "*******";
+        color: brown;
+        align-content: center;
+      }
+      input::placeholder {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header" id="first">
+      <h1>Hello, World!</h1>
+      <p>This is a sample HTML document.</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2024 My Website</p>
+      <p>Contact us at info@mywebsite.com</p>
+      <p>Follow us on social media!</p>
+      <p><a href="https://google.com"> Google</a></p>
+      <p>dgfshgwdbsjdsjd</p>
+      <label for="name">Your name</label>
+      <input type="text" name="name" placeholder="name" />
+    </div>
+  </body>
+</html>
+
+<!-- <p data-color="red">This is a paragraph with a data attribute.</p>
+some more selectors
+ .header:nth-child(1/even/odd) {
+        color: red;
+ }
+ data attribute selector
+ [data-role="button"] {
+        background-color: green;
+ }
+ div,.header, .footer {
+        border: 1px solid black;
+ }
+ ::selection {
+        background-color: yellow;
+ } -->

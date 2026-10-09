@@ -1,0 +1,26 @@
+ Vid 13 -- Enteties,code tag and more
+ 
+ Vid 14 -- intro to css
+
+ vid 15 -- inline internal and external css
+
+ vid 16 -- Solution of excercise1 (embed audio and video)
+
+
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "AllowAccountUploads",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::220819348844:root"
+			},
+			"Action": [
+				"s3:PutObject",
+				"s3:GetObject"
+			],
+			"Resource": "arn:aws:s3:::karim12-220819348844-eu-north-1-an/*"
+		}
+	]
+}

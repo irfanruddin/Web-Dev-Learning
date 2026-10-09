@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+:root {
+  --ink: #17252f;
+  --muted: #728184;
+  --teal: #0d7773;
+  --mint: #dff3ec;
+  --line: #dfe8e4;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #f5f8f6;
+  font-family: "DM Sans", sans-serif;
+}
+.brand {
+  font:
+    700 1.25rem "Space Grotesk",
+    sans-serif;
+  letter-spacing: -0.04em;
+}
+.brand span {
+  color: var(--teal);
+}
+.eyebrow,
+.kicker {
+  color: var(--teal);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+h1,
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.06em;
+}
+/* Login */
+.login-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 42px clamp(28px, 6vw, 88px);
+  background: var(--mint);
+  overflow: hidden;
+  position: relative;
+}
+.welcome::after {
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  border: 1px solid #a8d6c9;
+  border-radius: 50%;
+  right: -100px;
+  bottom: -100px;
+  box-shadow:
+    0 0 0 30px #d5eee5,
+    0 0 0 60px #cae8dd;
+}
+.welcome .brand,
+.welcome-copy,
+.quote {
+  position: relative;
+  z-index: 1;
+}
+.welcome-copy {
+  max-width: 550px;
+}
+.welcome h1 {
+  font-size: clamp(3.2rem, 6vw, 5.8rem);
+  line-height: 0.94;
+  margin: 18px 0 24px;
+  max-width: 600px;
+}
+.welcome-copy p {
+  color: #4e6968;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 430px;
+}
+.quote {
+  color: #53716e;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  max-width: 280px;
+}
+.quote strong {
+  display: block;
+  color: var(--ink);
+  margin-top: 10px;
+}
+.login-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px clamp(25px, 6vw, 96px);
+  background: #fff;
+}
+.form-wrap {
+  width: min(100%, 390px);
+}
+.form-wrap h2 {
+  font-size: 2.15rem;
+  margin: 14px 0 8px;
+}
+.intro {
+  color: var(--muted);
+  margin: 0 0 32px;
+}
+label {
+  display: block;
+  color: #405258;
+  font-size: 0.83rem;
+  font-weight: 700;
+  margin: 20px 0 8px;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 13px 14px;
+  font: inherit;
+  color: var(--ink);
+  background: #fbfdfc;
+  outline: none;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px #dff3ec;
+}
+.password-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.password-row label {
+  margin-bottom: 8px;
+}
+.forgot {
+  color: var(--teal);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.submit {
+  border: 0;
+  border-radius: 8px;
+  background: var(--teal);
+  color: white;
+  cursor: pointer;
+  font: 700 0.9rem "DM Sans";
+  margin-top: 28px;
+  padding: 15px 20px;
+}
+.submit:hover {
+  background: #095d5a;
+}
+.divider {
+  align-items: center;
+  color: #9aa9a6;
+  display: flex;
+  font-size: 0.75rem;
+  gap: 12px;
+  margin: 25px 0;
+}
+.divider::before,
+.divider::after {
+  background: var(--line);
+  content: "";
+  flex: 1;
+  height: 1px;
+}
+.demo {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+.demo b {
+  color: var(--ink);
+}
+.error {
+  color: #b44b42;
+  display: none;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+/* Application */
+.topbar {
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px clamp(24px, 7vw, 110px);
+}
+.user {
+  align-items: center;
+  display: flex;
+  gap: 13px;
+}
+.avatar {
+  align-items: center;
+  background: #f3dfc9;
+  border-radius: 50%;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 700;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+.user small {
+  color: var(--muted);
+  display: block;
+  font-size: 0.72rem;
+}
+.user strong {
+  font-size: 0.85rem;
+}
+.logout {
+  background: none;
+  border: 0;
+  color: var(--teal);
+  cursor: pointer;
+  font: 700 0.8rem "DM Sans";
+  margin-left: 15px;
+}
+.layout {
+  display: grid;
+  gap: clamp(30px, 7vw, 100px);
+  grid-template-columns: minmax(280px, 340px) minmax(0, 650px);
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 72px 28px 90px;
+}
+.side h1 {
+  font: 700 clamp(2.7rem, 5vw, 4.4rem) "Space Grotesk";
+  letter-spacing: -0.07em;
+  line-height: 0.97;
+  margin: 16px 0 22px;
+}
+.side p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+.progress {
+  border-top: 1px solid var(--line);
+  margin-top: 42px;
+  padding-top: 20px;
+}
+.progress span {
+  color: var(--teal);
+  font-weight: 700;
+}
+.progress-bar {
+  background: #d8e7e1;
+  height: 5px;
+  margin-top: 13px;
+}
+.progress-bar i {
+  background: var(--teal);
+  display: block;
+  height: 100%;
+  width: 30%;
+}
+.form-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: clamp(24px, 5vw, 46px);
+  box-shadow: 0 14px 40px #3153480d;
+}
+.form-card h2 {
+  font-size: 1.75rem;
+  margin: 0 0 8px;
+}
+.form-card > p {
+  color: var(--muted);
+  margin: 0 0 26px;
+}
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr 1fr;
+}
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+.choices label {
+  background: #f5f8f6;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  margin: 0;
+  padding: 10px 13px;
+}
+.choices input {
+  accent-color: var(--teal);
+  margin-right: 5px;
+  width: auto;
+}
+.actions {
+  align-items: center;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-top: 24px;
+}
+.actions small {
+  color: var(--muted);
+}
+.success {
+  color: var(--teal);
+  display: none;
+  font-size: 0.86rem;
+  font-weight: 700;
+  margin-top: 18px;
+}
+@media (max-width: 760px) {
+  .login-shell {
+    grid-template-columns: 1fr;
+  }
+  .welcome {
+    min-height: 370px;
+    padding: 28px;
+  }
+  .welcome h1 {
+    font-size: 3.5rem;
+  }
+  .quote {
+    display: none;
+  }
+  .login-panel {
+    padding: 44px 28px 60px;
+  }
+  .topbar {
+    padding: 17px 20px;
+  }
+  .user small,
+  .user strong {
+    display: none;
+  }
+  .layout {
+    display: block;
+    padding: 45px 20px 65px;
+  }
+  .side {
+    margin-bottom: 35px;
+  }
+  .side h1 {
+    font-size: 3.3rem;
+  }
+  .progress {
+    margin-top: 26px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .actions .submit {
+    width: 100%;
+  }
+}

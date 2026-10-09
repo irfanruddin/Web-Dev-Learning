@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 80vh;
+        width: 80vw;
+        border: 2px solid black;
+        position: relative;
+      }
+      .circle {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        background-color: red;
+        border: 1px solid black;
+        position: absolute;
+        bottom: 0px;
+
+        animation:
+          animation1 3s linear infinite alternate,
+          animation2 1s ease-out infinite alternate;
+      }
+      @keyframes animation1 {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          translate: 80vw 0;
+        }
+      }
+      @keyframes animation2 {
+        0% {
+          transform: translatey(0);
+        }
+        50% {
+          transform: translatey(-200px);
+        }
+        100% {
+          transform: translatey(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle circ"></div>
+    </div>
+  </body>
+</html>
