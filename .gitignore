@@ -1,0 +1,12 @@
+# Executable files
+*.exe
+
+# Learning videos
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
+
+# ZIP archives
+*.zip
