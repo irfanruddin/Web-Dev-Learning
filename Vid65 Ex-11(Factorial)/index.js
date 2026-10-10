@@ -1,4 +1,4 @@
-/*
+
 function factorial(n) {
   var fact = 1;
   for (var i = 1; i <= n; i++) {
@@ -8,9 +8,7 @@ function factorial(n) {
 }
 x = factorial(3);
 console.log(x);
-*/
 
-/*
 
 function factorial(n) {
   var fact = 1;
@@ -21,7 +19,7 @@ function factorial(n) {
 }
 x = factorial(6);
 console.log(x);
-*/
+
 
 function factorial(n) {
   var fact = 1;
