@@ -5,26 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        place-items: center;
-      }
       div {
         border: 2px solid black;
         width: 100px;
         min-height: 100px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      button {
+        padding: 5px;
       }
     </style>
   </head>
   <body>
-    <div class="first">Lorem ipsum dolor sit amet.</div>
-    <!-- <div hidden="true">
+    <!--    <div hidden="true">
+      <div class="first">Lorem ipsum dolor sit amet.</div>
+      <div hidden="true">
       Lorem ipsum dolor sit amet. 2
-    </div> -->
-    <div class="second">Lorem ipsum dolor sit amet.</div>
-    <div class="third">Lorem ipsum dolor sit amet.</div>
-    <div class="fourth">Lorem ipsum dolor sit amet.</div>
-    <div class="fifth">Lorem ipsum dolor sit amet.</div>
+    </div> 
+      <div class="second">Lorem ipsum dolor sit amet.</div>
+      <div class="third">Lorem ipsum dolor sit amet.</div>
+      <div class="fourth">Lorem ipsum dolor sit amet.</div>
+      <div class="fifth">Lorem ipsum dolor sit amet.</div>
+    </div>
+    -->
+
+    <div>
+      <button class="btn1" onclick="first()">Button1</button>
+      <button class="btn2" onclick="second()">Button2</button>
+      <button class="btn3" onclick="third()">Button3</button>
+      <button class="btn4" onclick="fourth()">Button4</button>
+      <button class="btn5" onclick="fifth()">Button5</button>
+    </div>
+    <script>
+      function first() {
+        let car = document.getElementsByClassName("btn1");
+        alert("Button 1 is Clicked.");
+      }
+      function second() {
+        let car = document.getElementsByClassName("btn2");
+        alert("Button 2 is Clicked.");
+      }
+      function third() {
+        let car = document.getElementsByClassName("btn3");
+        alert("Button 3 is Clicked.");
+      }
+      function fourth() {
+        let car = document.getElementsByClassName("btn4");
+        alert("Button 4 is Clicked.");
+      }
+      function fifth() {
+        let car = document.getElementsByClassName("btn5");
+        alert("Button 5 is Clicked.");
+      }
+    </script>
   </body>
 </html>

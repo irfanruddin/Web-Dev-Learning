@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Dynamic Bookmark saver</h1>
+    <div class="input">
+      <input type="text" id="sitename" />Site Name <br /><br />
+      <input type="text" id="siteurl" />Site Url <br /><br />
+    </div>
+    <button id="savesite">Save site</button>
+    <h2>Saved Bookmark</h2>
+    <ul id="bookmarklist"></ul>
+  </body>
+  <script>
+    const addButton = document.getElementById("savesite").value;
+    const bookmarkList = document.getElementById("bookmarklist").value;
+
+    addButton.document.addEventListener("click", function () {
+      const name = document.getElementById("sitename").value;
+      const url = document.getElementById("siteurl").value;
+    });
+
+    
+  </script>
+</html>
