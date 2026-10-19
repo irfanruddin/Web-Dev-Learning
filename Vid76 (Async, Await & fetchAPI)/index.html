@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // // Async and Await
+      //   function getData() {
+      //     return new Promise((resolve,reject)=>{
+      //         setTimeout(() => {
+      //           resolve("Data Retrived");
+      //         }, 1000);
+      //     })
+      //   }
+
+      //   async function main(){
+
+      //       console.log("I am first line");
+      //       console.log("I am second line");
+      //       console.log("I am third line");
+
+      //       let data = await getData();
+      //       console.log(data);
+
+      //       console.log("I am fourth line");
+      //       console.log("I am fifth line");
+      //       console.log("I am sixth line");
+      //     }
+
+      //     main()
+
+      // Fetch API
+
+      // Async and Await
+      //   fetch("https://jsonplaceholder.typicode.com/posts/1")
+      //     .then((response) => response.json())
+      //     .then((json) => console.log(json));
+
+      async function getData() {
+        let x = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+        let data = await x.json();
+        console.log(data);
+      }
+      async function main() {
+        console.log("I am first line");
+        console.log("I am second line");
+
+        let data = await getData();
+        console.log(data);
+
+        console.log("I am third line");
+        console.log("I am fourth line");
+      }
+
+      main();
+    </script>
+  </body>
+</html>

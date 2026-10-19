@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      div {
+      .button-container {
         border: 2px solid black;
         width: 100px;
         min-height: 100px;
@@ -20,19 +20,20 @@
     </style>
   </head>
   <body>
-    <!--    <div hidden="true">
-      <div class="first">Lorem ipsum dolor sit amet.</div>
-      <div hidden="true">
-      Lorem ipsum dolor sit amet. 2
-    </div> 
+    <div class="container red">
+      <div class="first" data-createdby="hasim" data-conceptby="irfan">
+        Lorem ipsum dolor sit amet.
+      </div>
+      <!-- <div class="half" data-createdby="karim" data-conceptby="irfan">
+        Lorem ipsum dolor sit amet. 2
+      </div> -->
       <div class="second">Lorem ipsum dolor sit amet.</div>
       <div class="third">Lorem ipsum dolor sit amet.</div>
       <div class="fourth">Lorem ipsum dolor sit amet.</div>
       <div class="fifth">Lorem ipsum dolor sit amet.</div>
     </div>
-    -->
 
-    <div>
+    <div class="button-container">
       <button class="btn1" onclick="first()">Button1</button>
       <button class="btn2" onclick="second()">Button2</button>
       <button class="btn3" onclick="third()">Button3</button>
@@ -60,6 +61,28 @@
         let car = document.getElementsByClassName("btn5");
         alert("Button 5 is Clicked.");
       }
+
+      // Element insertion
+
+      let div = document.createElement("div");
+      div.innerHTML = "i have been inserted";
+      div.setAttribute("class", "container1");
+      document.querySelector(".container").append(div);
+
+      let div1 = document.querySelector(".container");
+      div1.insertAdjacentHTML("afterbegin", "<b>i have been inserted</b>");
+
+      // element remove
+
+      document.querySelector(".container1").remove();
+
+      //add class
+
+      document.querySelector(".container").classList.add("blue");
+
+      //revome class
+
+      document.querySelector(".container").classList.remove("red");
     </script>
   </body>
 </html>

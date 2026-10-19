@@ -209,14 +209,14 @@ div p {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
   justify-content: space-between;
 }
 .service {
   padding: 10px;
   border-radius: 20px;
   height: 230px;
-  min-width: 200px;
+  /* min-width: 200px; */
   box-sizing: border-box;
   background-color: rgb(24, 13, 58);
   background:
@@ -225,7 +225,7 @@ div p {
       rgba(40, 55, 120, 0.3),
       transparent 60%
     ),
-    linear-gradient(135deg, #1c1b3a, #211522 75%, #200f19);
+    linear-gradient(135deg, #1c1b3a, #352136 75%, #412032);
 }
 
 .service p {
@@ -244,4 +244,84 @@ div p {
   font-size: smaller;
   color: rgb(158, 157, 157);
   font-weight: 600;
+}
+.faq {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.faq-top {
+  color: white;
+  width: 80vw;
+  margin: 0 auto 20px auto;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.faq > .questions,
+.faq > .answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(47, 46, 46);
+  color: white;
+  font-size: larger;
+}
+.answer {
+  margin-bottom: 5px;
+}
+.faq > .answer[hidden] {
+  display: none !important;
+}
+.questions > div:nth-child(2) {
+  font-size: 30px;
+  transition: transform 0.2s ease;
+}
+.questions.active > div:nth-child(2) {
+  transform: rotate(45deg);
+}
+.questions:hover,
+.answer:hover {
+  cursor: pointer;
+  background-color: rgb(69, 69, 70);
+}
+
+.get-started {
+  width: 80vw;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.last {
+  width: 80vw;
+  margin: 0 auto;
+  color: rgb(158, 157, 157);
+}
+.footer-links {
+  width: 80vw;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  gap: 10px;
+  font-size: x-small;
+  color: rgb(158, 157, 157);
+}
+a {
+  color: rgb(158, 157, 157);
+}
+.footer-copy > P {
+  font-size: small;
+  color: rgb(158, 157, 157);
+}
+.footer-language {
+  width: 80vw;
+  margin: 0 auto;
+  font-size: x-small;
+  color: rgb(158, 157, 157);
 }

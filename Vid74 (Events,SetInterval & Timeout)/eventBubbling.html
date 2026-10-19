@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        margin: 50px;
+        background-color: beige;
+      }
+      .content {
+        border: 2px solid black;
+        margin: 50px;
+        background-color: aqua;
+      }
+      .child {
+        border: 2px solid black;
+        margin: 50px;
+        padding: 50px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="child">i am a child</div>
+      </div>
+    </div>
+    <script>
+      let click = document.querySelector(".child");
+
+      click.addEventListener("contextmenu", (e) => {
+        alert("clild is clicked");
+        e.stopPropagation();
+      });
+      let click1 = document.querySelector(".content");
+      click1.addEventListener("contextmenu", () => {
+        alert("content is clicked");
+        e.stopPropagation();
+      });
+      let click2 = document.querySelector(".container");
+      click2.addEventListener("contextmenu", () => {
+        alert("container is clicked");
+      });
+
+      function getColor() {
+        let a = Math.floor(Math.random() * 255);
+        let b = Math.floor(Math.random() * 255);
+        let c = Math.floor(Math.random() * 255);
+
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log("Hii");
+
+        return `rgb(${a},${b},${c})`;
+      }
+
+      setInterval(() => {
+        document.querySelector(".child").style.background = getColor();
+      }, 1000);
+
+      //   setTimeout(() => {
+      //     document.querySelector(".child").style.background = getColor();
+      //   }, 1000);
+      //   clearTimeout()
+    </script>
+  </body>
+</html>

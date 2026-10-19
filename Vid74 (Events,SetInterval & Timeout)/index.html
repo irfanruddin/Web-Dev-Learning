@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="content" class="content">hii i am irfan</div>
+    <button id="btn">change content</button>
+    <script>
+      let button = document.getElementById("btn");
+
+      button.addEventListener("click", () => {
+        document.querySelector(".content").innerHTML = "Yes you were clicked.";
+      });
+
+      button.addEventListener("contextmenu", () => {
+        // document.querySelector(".content").innerHTML = "Dont right click."
+        alert(" Dont hack me please");
+      });
+
+      button.addEventListener("keydown", (e) => {
+        console.log(e);
+      });
+    </script>
+  </body>
+</html>

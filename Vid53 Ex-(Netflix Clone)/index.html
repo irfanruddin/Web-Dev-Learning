@@ -9,9 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <style>
-
-    </style>
+    <style></style>
   </head>
   <body>
     <div class="main">
@@ -105,5 +103,114 @@
         </p>
       </div>
     </section>
+    <div class="faq-top">
+      <p>Frequently Asked Questions</p>
+    </div>
+    <section class="faq">
+      <div class="questions">
+        <div>What is Netflix?</div>
+        <div>+</div>
+      </div>
+      <div class="answer" hidden="true">
+        Netflix is a streaming service that offers a wide variety of
+        award-winning TV shows, movies, anime, documentaries, and more on
+        thousands of internet-connected devices. You can watch anytime,
+        anywhere, and switch between devices without interrupting your viewing
+        experience.
+      </div>
+      <div class="questions">
+        <div>How do I cancel?</div>
+        <div>+</div>
+      </div>
+      <div class="answer" hidden="true">
+        You can cancel your Netflix account at any time. Go to the "Account"
+        section, select "Cancel Membership," and follow the prompts to end your
+        subscription whenever you choose.
+      </div>
+      <div class="questions">
+        <div>What can I watch on Netflix?</div>
+        <div>+</div>
+      </div>
+      <div class="answer" hidden="true">
+        Netflix offers a vast library of content including TV shows, movies,
+        anime, documentaries, thrillers, comedies, and family favorites. The
+        selection changes regularly, so there is always something new to
+        discover.
+      </div>
+      <div class="questions">
+        <div>Is Netflix available in my country?</div>
+        <div>+</div>
+      </div>
+      <div class="answer" hidden="true">
+        Netflix is available in many countries around the world. Check the
+        Netflix website for availability in your region, as pricing and content
+        may vary depending on where you are located.
+      </div>
+      <div class="questions">
+        <div>How do I contact customer support?</div>
+        <div>+</div>
+      </div>
+      <div class="answer" hidden="true">
+        You can contact Netflix customer support through the "Help" section on
+        the website or via the app. There, you can browse common issues, manage
+        your account, or reach out for personalized help.
+      </div>
+      <div class="questions">
+        <div>Where can I find the Netflix app?</div>
+        <div>+</div>
+      </div>
+      <div class="answer" hidden="true">
+        You can download the Netflix app from your device's app store, whether
+        you are using a smartphone, tablet, smart TV, gaming console, or
+        streaming box. Once installed, you can sign in and start watching.
+      </div>
+    </section>
+    <div class="get-started">
+      <input type="email" placeholder="Email address" />
+      <button class="join">Get Started</button>
+    </div>
+
+    <script>
+      // script for faq section
+
+      const faqQuestions = document.querySelectorAll(".questions");
+
+      faqQuestions.forEach((question) => {
+        const answer = question.nextElementSibling;
+
+        if (answer && answer.classList.contains("answer")) {
+          answer.hidden = true;
+        }
+
+        question.addEventListener("click", () => {
+          const sign = question.querySelector("div:nth-child(2)");
+          const isOpen = !answer.hidden;
+
+          faqQuestions.forEach((item) => {
+            const itemAnswer = item.nextElementSibling;
+            const itemSign = item.querySelector("div:nth-child(2)");
+
+            if (itemAnswer && itemAnswer.classList.contains("answer")) {
+              itemAnswer.hidden = true;
+            }
+
+            item.classList.remove("active");
+
+            if (itemSign) {
+              itemSign.textContent = "+";
+            }
+          });
+
+          if (!isOpen) {
+            answer.hidden = false;
+            question.classList.add("active");
+
+            if (sign) {
+              sign.textContent = "+";
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
