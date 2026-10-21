@@ -8,8 +8,8 @@ let b = parseInt(prompt("Enter a number: "));
 //     document.write("Addition is ", a+b);
 //   }
 function calc() {
-  let x = a / b;
   try {
+    let x = a / b;
     console.log(x);
   } catch (error) {
     console.log("Cannot divide by zero");
@@ -18,4 +18,4 @@ function calc() {
   }
 }
 
-console.log(calc());
+let c = calc();
